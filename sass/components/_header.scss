@@ -1,0 +1,37 @@
+.header {
+  padding-top: 39px;
+  padding-bottom: 100px;
+  font-size: 22px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    display: block;
+    flex-wrap: nowrap;
+    color: $secondary-accent-color;
+    &::after {
+      content: "";
+      display: block;
+      margin-left: 47px;
+      height: 1px;
+      width: 140px;
+      background-color: #f8f4ff;
+      box-shadow: 0px 0px 4px 0.5px #f8f4ff;
+    }
+  }
+
+  &__item {
+    display: block;
+    &:nth-child(3) {
+      font-size: 44px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    &:hover:not(:nth-child(3)) {
+      color: $secondary-text-color;
+    }
+  }
+}

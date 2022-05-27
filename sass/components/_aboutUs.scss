@@ -1,0 +1,15 @@
+.aboutUs {
+  display: inline-flex;
+  flex-wrap: wrap;
+  &__title {
+    &--color {
+      color: #e761ca;
+    }
+  }
+  &__container {
+    width: 686px;
+  }
+  &__img {
+    margin-left: 186px;
+  }
+}

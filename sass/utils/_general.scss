@@ -1,0 +1,26 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #000;
+  color: #dddcdb;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  // opacity: 1;
+}
+
+.container {
+  margin-left: 154px;
+  margin-right: 154px;
+}

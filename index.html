@@ -21,11 +21,11 @@
 
     <header class="header container">
         <ul class="header__list">
-            <li class="header__item"><button class="header__button">Про нас</button></li>
-            <li class="header__item">Портфоліо</li>
+            <li class="header__item"><a class="header__link" href="#aboutUS">Про нас</a></li>
+            <li class="header__item"><a class="header__link" href="#portfolio">Портфоліо</a></li>
             <li class="header__item"><span class="header__logo">Malachite</span>Factory</li>
-            <li class="header__item">Як замовити?</li>
-            <li class="header__item">Зв’язатися</li>
+            <li class="header__item"><a class="header__link" href="#order">Як замовити?</a></li>
+            <li class="header__item"><a class="header__link" href="#footer">Зв’язатися</a></li>
         </ul>
     </header>
 
@@ -33,22 +33,24 @@
     <main>
 
 
-        <section class="aboutUs container">
+        <section id="aboutUs" class="aboutUs container">
             <div class="aboutUs__container">
                 <h1 class="aboutUs__title">Створюємо <span class="aboutUs__title--color">неоновий</span> декор
                     під замовлення</h1>
-                <p>MALACHITE FACTORY - провідна компанія дизайнер-виробник неонового декору та рекламних вивісок. Ми
+                <p class="aboutUs__paragraph">MALACHITE FACTORY - провідна компанія дизайнер-виробник неонового декору
+                    та рекламних вивісок. Ми
                     спеціалізуємося на
                     виготовленні світлодіодних лед неонових предметів інтер’єру, а саме: текстів, логотипів та малюнків
                     на
                     замовлення.
                 </p>
                 <br>
-                <p>Замовляйте у нас свою фантазію, яку ми перетворимо у найякіснішу реальність!</p>
-                <button>Розрахувати вартість</button>
-                <button>Замовити</button>
+                <p class="aboutUs__paragraph">Замовляйте у нас свою фантазію, яку ми перетворимо у найякіснішу
+                    реальність!</p>
+                <button class="aboutUs__button aboutUs__button-cost">Розрахувати вартість</button>
+                <button class="aboutUs__button aboutUs__button-order">Замовити</button>
             </div>
-            <img class="aboutUs__img" src="./images/image 1.jpg" alt="">
+            <img class="aboutUs__img" src="./images/image_1.jpg" alt="">
         </section>
 
 
@@ -71,11 +73,9 @@
             <button>Розрахувати вартіть</button>
         </section>
 
+        <section id="portfolio" class="portfolio container"></section>
 
-        <section class="portfolio container"></section>
-
-
-        <section class="order container">
+        <section id="order" class="order container">
             <h2 class="order__title">Як замовити?</h2>
             <ul class="order__list">
                 <li class="order__item">
@@ -135,7 +135,7 @@
     </main>
 
 
-    <footer class="footer container">
+    <footer id="footer" class="footer container">
         <h1>Contact us</h1>
         <ul>
             <li>

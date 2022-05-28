@@ -1,3 +1,35 @@
+@font-face {
+  font-family: "NeonOne";
+  src: url("../fonts/NeonOneRegular.eot");
+  src: url("../fonts/NeonOneRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/NeonOneRegular.svg#NeonOneRegular") format("svg"), url("../fonts/NeonOneRegular.ttf") format("truetype"), url("../fonts/NeonOneRegular.woff") format("woff"), url("../fonts/NeonOneRegular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Klaxons";
+  src: url("../fonts/Klaxons.eot");
+  src: url("../fonts/Klaxons.eot?#iefix") format("embedded-opentype"), url("../fonts/Klaxons.svg#Klaxons") format("svg"), url("../fonts/Klaxons.ttf") format("truetype"), url("../fonts/Klaxons.woff") format("woff"), url("../fonts/Klaxons.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sansation";
+  src: url("../fonts/Sansation_Regular.eot");
+  src: url("../fonts/Sansation_Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Sansation_Regular.woff2") format("woff2"), url("../fonts/SansationRegular.svg#SansationRegular") format("svg"), url("../fonts/SansationRegular.ttf") format("truetype"), url("../fonts/SansationRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Days";
+  src: url("../fonts/Days.eot");
+  src: url("../fonts/Days.svg#Days") format("svg"), url("../fonts/Days.ttf") format("truetype"), url("../fonts/Days.woff") format("woff"), url("../fonts/Days.eot?#iefix") format("embedded-opentype"), url("../fonts/Days.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 h1,
 h2,
 h3,
@@ -84,9 +116,11 @@ img {
 
 .header__item {
   display: block;
+  font-family: "Sansation";
 }
 
 .header__item:nth-child(3) {
+  font-family: "NeonOne";
   font-size: 44px;
   text-align: center;
   text-transform: uppercase;
@@ -129,9 +163,9 @@ img {
 }
 
 .aboutUs {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-top: 100px;
@@ -145,7 +179,8 @@ img {
 
 .aboutUs__title {
   margin-bottom: 35px;
-  font-family: "Days One", sans-serif;
+  max-width: 560px;
+  font-family: "Days", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 46px;
@@ -164,11 +199,13 @@ img {
 
 .aboutUs__button {
   font-size: 24px;
+  font-family: "Sansation";
   color: #fff;
   border: 3px solid #ac3e94;
   -webkit-box-shadow: 0px 0px 15px #ac3e94;
           box-shadow: 0px 0px 15px #ac3e94;
   border-radius: 70px;
+  cursor: pointer;
 }
 
 .aboutUs__button-cost {

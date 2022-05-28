@@ -10,6 +10,7 @@
   &__logo {
     display: block;
     flex-wrap: nowrap;
+
     color: $secondary-accent-color;
     &::after {
       content: "";
@@ -24,7 +25,9 @@
 
   &__item {
     display: block;
+    font-family: "Sansation";
     &:nth-child(3) {
+      font-family: "NeonOne";
       font-size: 44px;
       text-align: center;
       text-transform: uppercase;

@@ -1,3 +1,51 @@
+@font-face {
+  font-family: "NeonOne";
+  src: url("../fonts/NeonOneRegular.eot");
+  src: url("../fonts/NeonOneRegular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/NeonOneRegular.svg#NeonOneRegular") format("svg"),
+    url("../fonts/NeonOneRegular.ttf") format("truetype"),
+    url("../fonts/NeonOneRegular.woff") format("woff"),
+    url("../fonts/NeonOneRegular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Klaxons";
+  src: url("../fonts/Klaxons.eot");
+  src: url("../fonts/Klaxons.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Klaxons.svg#Klaxons") format("svg"),
+    url("../fonts/Klaxons.ttf") format("truetype"),
+    url("../fonts/Klaxons.woff") format("woff"),
+    url("../fonts/Klaxons.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sansation";
+  src: url("../fonts/Sansation_Regular.eot");
+  src: url("../fonts/Sansation_Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Sansation_Regular.woff2") format("woff2"),
+    url("../fonts/SansationRegular.svg#SansationRegular") format("svg"),
+    url("../fonts/SansationRegular.ttf") format("truetype"),
+    url("../fonts/SansationRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Days";
+  src: url("../fonts/Days.eot");
+  src: url("../fonts/Days.svg#Days") format("svg"),
+    url("../fonts/Days.ttf") format("truetype"),
+    url("../fonts/Days.woff") format("woff"),
+    url("../fonts/Days.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Days.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @import "./utils/reset";
 @import "./utils/general";
 @import "./utils/vars";

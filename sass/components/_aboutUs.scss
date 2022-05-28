@@ -1,5 +1,5 @@
 .aboutUs {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   padding-top: 100px;
   padding-bottom: 184px;
@@ -11,8 +11,8 @@
 
   &__title {
     margin-bottom: 35px;
-
-    font-family: "Days One", sans-serif;
+    max-width: 560px;
+    font-family: "Days", sans-serif;
     font-weight: 400;
     font-size: 36px;
     line-height: 46px;
@@ -31,10 +31,12 @@
 
   &__button {
     font-size: 24px;
+    font-family: "Sansation";
     color: #fff;
     border: 3px solid #ac3e94;
     box-shadow: 0px 0px 15px #ac3e94;
     border-radius: 70px;
+    cursor: pointer;
   }
 
   &__button-cost {

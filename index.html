@@ -11,7 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Days+One&family=Montserrat:wght@400;700&family=Roboto&display=swap"
         rel="stylesheet">
-    <link href='./fonts/NeonOne.otf' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
@@ -53,32 +53,62 @@
                 <button class="aboutUs__button aboutUs__button-order">Замовити</button>
             </div>
             <img class="aboutUs__img" src="./images/image_1.jpg" alt="">
-            <svg>
-                <use href="./images/Component_1.svg"></use>
+            <svg class="aboutUs__icon" width="25px" height="34.4px">
+                <use href="./images/symbol-defs.svg#icon-arrow"></use>
             </svg>
         </section>
 
 
         <section class="idea container">
-            <img src="./images/image 2.jpg" alt="">
-            <h2>Ідея та дизайн</h2>
-            <p>Прийшла в голову дивна ідея?
-                Не проблема! Ми все втілимо в життя.
+            <img class="idea__neon-img" src="./images/Neon.png" alt="">
+            <img class="idea__img" src="./images/image_2.jpg" alt="">
+            <div class="idea__container">
+                <h2 class="idea__title">Ідея та дизайн</h2>
+                <p class="idea__paragraph">
+                    Прийшла в голову дивна ідея?
+                    Не проблема! Ми все втілимо в життя.
+                </p>
+                <br>
+                <p class="idea__paragraph idea__paragraph--margin">
+                    Залишайте заявку в якій укажіть:
 
-                Залишайте заявку в якій укажіть:
-                Своє ім’я
-                Особистий номер телефону
-                Короткий опис замовлення
-                (текст/малюнок, розмір, приклад
-                шрифту, місце розташування)
-
-                *попередньо Ви можете вирахувати приблизну вартість
-                замовлення
-            </p>
-            <button>Розрахувати вартіть</button>
+                <ul class="idea__list">
+                    <li>Своє ім’я</li>
+                    <li>Особистий номер телефону</li>
+                    <li>Короткий опис замовлення</li>
+                </ul>
+                </p>
+                <p class="idea__paragraph idea__paragraph--margin">(текст/малюнок, розмір, приклад
+                    шрифту, місце розташування)</p>
+                <br>
+                <p class="idea__paragraph idea__paragraph--margin idea__paragraph--resize">
+                    *попередньо Ви можете вирахувати приблизну вартість
+                    замовлення
+                </p>
+                <button class="idea__button">Розрахувати вартіcть</button>
+            </div>
         </section>
 
-        <section id="portfolio" class="portfolio container"></section>
+        <section id="portfolio" class="portfolio container">
+            <h2 class="portfolio__title">portfolio</h2>
+            <div class="portfolio__swiper swiper">
+
+                <div class="swiper__wrapper swiper-wrapper">
+
+                    <div class="swiper__slide swiper-slide"><img src="./images/slider_image2.jpg" alt=""></div>
+                    <div class="swiper__slide swiper-slide"><img src="./images/slider_image1.jpg" alt=""></div>
+
+                </div>
+
+                <svg class="swiper__button--prev swiper-button-prev">
+                    <use href="./images/symbol-defs.svg#icon-arrow"></use>
+                </svg>
+                <svg class="swiper__button--next swiper-button-next">
+                    <use href="./images/symbol-defs.svg#icon-arrow"></use>
+                </svg>
+            </div>
+            <button class="portfolio__button">Бiльше</button>
+        </section>
 
         <section id="order" class="order container">
             <h2 class="order__title">Як замовити?</h2>
@@ -163,6 +193,8 @@
             </li>
         </ul>
     </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
 </body>
 
 </html>

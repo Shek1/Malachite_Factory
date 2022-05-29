@@ -1,0 +1,107 @@
+.order {
+  padding-bottom: 108px;
+  &__section-title {
+    margin-bottom: 147px;
+
+    font-family: "Days";
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 61px;
+    text-align: center;
+
+    color: #faf0e6;
+  }
+  &__list {
+    display: flex;
+    margin: -20px;
+    margin-bottom: 120px;
+  }
+  &__item {
+    width: calc((100% - 4 * 20px) / 4);
+    height: 509px;
+    margin: 20px;
+    background-color: #0bda51;
+    background: rgba(146, 146, 146, 0.2);
+
+    &:nth-child(2) .order__container {
+      background: linear-gradient(45deg, #562c61 0%, #410bda 100%);
+      box-shadow: 0px 0px 8px #3b1cff;
+    }
+    &:nth-child(3) .order__container {
+      background: linear-gradient(45deg, #612f2c 0%, #da870b 100%);
+      box-shadow: 0px 0px 8px #da870b;
+    }
+    &:nth-child(4) .order__container {
+      background: linear-gradient(45deg, #612c4f 0%, #da0b6e 100%);
+      box-shadow: 0px 0px 8px #da0b6e;
+    }
+    &:nth-child(2) .order__paragraph {
+      width: 228px;
+    }
+    &:nth-child(3) .order__paragraph {
+      width: 251px;
+    }
+  }
+  &__container {
+    width: 150px;
+    height: 150px;
+    margin-top: 60px;
+    margin-left: 84px;
+
+    background: linear-gradient(45deg, #2c613e 0%, #0bda51 100%);
+    box-shadow: 0px 0px 8px #0bda51;
+    border-radius: 50%;
+  }
+  &__icon {
+    // margin-top: 38px;
+    display: flex;
+    margin: auto;
+  }
+
+  &__title {
+    margin-top: 30px;
+    margin-bottom: 24px;
+
+    text-align: center;
+    font-family: "Sansation";
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+
+    color: #faf0e6;
+  }
+
+  &__paragraph {
+    width: 224px;
+    margin-left: 40px;
+
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #c1bfc3;
+  }
+  &__button {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 14px 66px;
+    background: #ac3e94;
+    border: 3px solid #ac3e94;
+    box-shadow: 0px 0px 15px #ac3e94;
+    border-radius: 70px;
+    cursor: pointer;
+
+    font-family: "Sansation";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+
+    letter-spacing: 0.05em;
+
+    color: #ffffff;
+  }
+}

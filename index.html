@@ -17,9 +17,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
-<body>
-
-
+<body class="body">
     <header class="header container">
         <ul class="header__list">
             <li class="header__item"><a class="header__link" href="#aboutUS">Про нас</a></li>
@@ -32,8 +30,6 @@
 
 
     <main>
-
-
         <section id="aboutUs" class="aboutUs container">
             <div class="aboutUs__container">
                 <h1 class="aboutUs__title">Створюємо <span class="aboutUs__title--color">неоновий</span> декор
@@ -95,8 +91,30 @@
 
                 <div class="swiper__wrapper swiper-wrapper">
 
-                    <div class="swiper__slide swiper-slide"><img src="./images/slider_image2.jpg" alt=""></div>
-                    <div class="swiper__slide swiper-slide"><img src="./images/slider_image1.jpg" alt=""></div>
+                    <div class="swiper__slide swiper-slide"><img src="./images/slider_image2.jpg" alt="">
+                        <div class="swiper__overlay">
+                            <p class="swiper__paragraph">Велике Вам дякую за таку чудову роботу, адже вона просто
+                                захоплює подих, і навіть на
+                                пошті всі були у захваті! <br>
+                                Обов’язково зв’яжуся з Вами ще не раз! :)))</p>
+                            <a href="" class="swiper__container">
+                                <img class="swiper__img" src="./images/image 3.png" alt="">
+                            </a>
+                            <p class="swiper__price">2000 ₴ - 3000 ₴</p>
+                        </div>
+                    </div>
+                    <div class="swiper__slide swiper-slide"><img src="./images/slider_image1.jpg" alt="">
+                        <div class="swiper__overlay">
+                            <p class="swiper__paragraph">Велике Вам дякую за таку чудову роботу, адже вона просто
+                                захоплює подих, і навіть на
+                                пошті всі були у захваті! <br>
+                                Обов’язково зв’яжуся з Вами ще не раз! :)))</p>
+                            <a href="" class="swiper__container">
+                                <img class="swiper__img" src="./images/image 3.png" alt="">
+                            </a>
+                            <p class="swiper__price">2000 ₴ - 3000 ₴</p>
+                        </div>
+                    </div>
 
                 </div>
 
@@ -215,6 +233,12 @@
         </p>
         <p class="footer__powered">Powered by <span class="footer__powered--color">Vladislav Zhylenko</span></p>
     </footer>
+    <div class="body__circle--first"></div>
+    <div class="body__circle--second"></div>
+    <div class="body__circle--third"></div>
+    <div class="body__circle--fourth"></div>
+    <div class="body__circle--fifth"></div>
+    <div class="body__circle--sixth"></div>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/slider.js"></script>
 </body>

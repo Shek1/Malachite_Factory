@@ -45,7 +45,7 @@
                 <br>
                 <p class="aboutUs__paragraph">Замовляйте у нас свою фантазію, яку ми перетворимо у найякіснішу
                     реальність!</p>
-                <button class="aboutUs__button aboutUs__button-cost">Розрахувати вартість</button>
+                <button class="aboutUs__button aboutUs__button-cost" data-modal-open>Розрахувати вартість</button>
                 <button class="aboutUs__button aboutUs__button-order">Замовити</button>
             </div>
             <img class="aboutUs__img" src="./images/image_1.jpg" alt="">
@@ -233,6 +233,37 @@
         </p>
         <p class="footer__powered">Powered by <span class="footer__powered--color">Vladislav Zhylenko</span></p>
     </footer>
+
+
+    <div class="backdrop is-hidden" data-modal>
+
+        <!-- <div class="modal__order">
+    </div> -->
+
+        <div class="modal__cost">
+            <h2 class="modal__title">РОЗРАХУВАТИ ВАРТІСТЬ</h2>
+            <svg class="modal__icon" width="25px" height="25px" data-modal-close>
+                <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+            <form class="modal__form">
+                <input class="modal__text" type="text" placeholder="Ширина, мм">
+                <input class="modal__text" type="text" placeholder="">
+                <input class="modal__text" type="text" placeholder="">
+                <input class="modal__text" type="text" placeholder="">
+            </form>
+            <p class="modal__paragraph">Вартість: <span>1000 ₴</span></p>
+            <p class="modal__paragraph">
+                *вирахована сумма <span>приблизна</span>. Для визначення більш точної вартості, залиште
+                <span>заявку</span> на сайті
+            </p>
+            <button class="modal__button">РОЗРАХУНОК</button>
+        </div>
+    </div>
+
+
+
+
+
     <div class="body__circle--first"></div>
     <div class="body__circle--second"></div>
     <div class="body__circle--third"></div>
@@ -241,6 +272,7 @@
     <div class="body__circle--sixth"></div>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

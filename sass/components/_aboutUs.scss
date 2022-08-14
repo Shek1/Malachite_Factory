@@ -1,11 +1,19 @@
 .aboutUs {
-  display: flex;
-  flex-wrap: wrap;
+  @media screen and (min-width: 1342px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
   padding-top: 100px;
   padding-bottom: 50px;
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   &__container {
-    width: 686px;
+    @media screen and (min-width: 1342px) {
+      width: 686px;
+    }
     padding-top: 74px;
   }
 
@@ -41,23 +49,36 @@
     box-shadow: 0px 0px 15px #ac3e94;
     border-radius: 70px;
     cursor: pointer;
+
+    @media screen and (max-width: 767px) {
+      display: flex;
+      margin: 0 auto;
+    }
   }
 
   &__button-cost {
     margin-top: 60px;
     padding: 14px 35px;
     background-color: transparent;
-    margin-right: 88px;
+    @media screen and (min-width: 768px) {
+      margin-right: 88px;
+    }
   }
 
   &__button-order {
     padding: 14px 66px;
     background-color: #ac3e94;
+    @media screen and (max-width: 767px) {
+      margin-top: 20px;
+    }
   }
 
   &__img {
-    margin-left: 186px;
+    margin-left: 126px;
     box-shadow: 0px 0px 16px 8px #28052f;
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
   }
   &__icon {
     display: flex;

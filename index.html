@@ -19,13 +19,25 @@
 
 <body class="body">
     <header class="header container">
-        <ul class="header__list">
-            <li class="header__item"><a class="header__link" href="#aboutUS">Про нас</a></li>
-            <li class="header__item"><a class="header__link" href="#portfolio">Портфоліо</a></li>
-            <li class="header__item"><span class="header__logo">Malachite</span>Factory</li>
-            <li class="header__item"><a class="header__link" href="#order">Як замовити?</a></li>
-            <li class="header__item"><a class="header__link" href="#footer">Зв’язатися</a></li>
-        </ul>
+        <div class="header__container">
+            <div class="header__menu" data-menu>
+                <ul class="header__list">
+                    <li class="header__item"><a class="header__link" href="#aboutUS">Про нас</a></li>
+                    <li class="header__item"><a class="header__link" href="#portfolio">Портфоліо</a></li>
+                </ul>
+                <a class="header__logo" href=""><span class="header__logo--recolor">Malachite</span>Factory</a>
+                <button class="header__button" data-menu-button>
+                    <svg width="25px" height="25px">
+                        <use href="./images/symbol-defs.svg#icon-menu"></use>
+                    </svg>
+                </button>
+                <ul class="header__list">
+                    <li class="header__item"><a class="header__link" href="#order">Як замовити?</a></li>
+                    <li class="header__item"><a class="header__link" href="#footer">Зв’язатися</a></li>
+                </ul>
+            </div>
+        </div>
+
     </header>
 
 
@@ -45,8 +57,8 @@
                 <br>
                 <p class="aboutUs__paragraph">Замовляйте у нас свою фантазію, яку ми перетворимо у найякіснішу
                     реальність!</p>
-                <button class="aboutUs__button aboutUs__button-cost" data-modal-open>Розрахувати вартість</button>
-                <button class="aboutUs__button aboutUs__button-order">Замовити</button>
+                <button class="aboutUs__button aboutUs__button-cost">Розрахувати вартість</button>
+                <button class="aboutUs__button aboutUs__button-order" data-modal-order-open>Замовити</button>
             </div>
             <img class="aboutUs__img" src="./images/image_1.jpg" alt="">
             <svg class="aboutUs__icon" width="25px" height="34.4px">
@@ -81,11 +93,11 @@
                     *попередньо Ви можете вирахувати приблизну вартість
                     замовлення
                 </p>
-                <button class="idea__button">Розрахувати вартіcть</button>
+                <button class="idea__button" data-modal-cost-open>Розрахувати вартіcть</button>
             </div>
         </section>
 
-        <section id="portfolio" class="portfolio container">
+        <!-- <section id="portfolio" class="portfolio container">
             <h2 class="portfolio__title">portfolio</h2>
             <div class="portfolio__swiper swiper">
 
@@ -126,7 +138,7 @@
                 </svg>
             </div>
             <button class="portfolio__button">Бiльше</button>
-        </section>
+        </section> -->
 
         <section id="order" class="order container">
             <h2 class="order__section-title">Як замовити?</h2>
@@ -231,48 +243,52 @@
         </ul>
         <p class="footer__copyright">Copyright © 2021 <span class="footer__copyright--color">Malachite</span> Factory.
         </p>
-        <p class="footer__powered">Powered by <span class="footer__powered--color">Vladislav Zhylenko</span></p>
     </footer>
 
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal-order data-modal-cost>
 
-        <!-- <div class="modal__order">
-    </div> -->
+        <div class="modal__order">
+            <h2 class="modal__title">ВАША ЗАЯВКА</h2>
+            <svg class="modal__icon" width="25px" height="25px" data-modal-order-close>
+                <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+            <form class="modal__form">
+                <input class="modal__text" type="text" placeholder="Ім’я">
+                <input class="modal__text" type="text" placeholder="Телефон">
+                <input class="modal__text" type="text" placeholder="Якою ви бачите свою вивіску?">
+            </form>
+
+            <button class="modal__button">Надіслати</button>
+        </div>
 
         <div class="modal__cost">
             <h2 class="modal__title">РОЗРАХУВАТИ ВАРТІСТЬ</h2>
-            <svg class="modal__icon" width="25px" height="25px" data-modal-close>
+            <svg class="modal__icon" width="25px" height="25px" data-modal-cost-close>
                 <use href="./images/symbol-defs.svg#icon-close"></use>
             </svg>
             <form class="modal__form">
                 <input class="modal__text" type="text" placeholder="Ширина, мм">
-                <input class="modal__text" type="text" placeholder="">
-                <input class="modal__text" type="text" placeholder="">
-                <input class="modal__text" type="text" placeholder="">
+                <input class="modal__text" type="text" placeholder="Висота, мм">
+                <input class="modal__text" type="text" placeholder="Довжина неону, м">
+                <input class="modal__text" type="text" placeholder="Кількість елементів">
             </form>
-            <p class="modal__paragraph">Вартість: <span>1000 ₴</span></p>
+            <p class="modal__paragraph-cost">Вартість: <span class="modal__paragraph-cost--recolor">1000 ₴</span></p>
             <p class="modal__paragraph">
-                *вирахована сумма <span>приблизна</span>. Для визначення більш точної вартості, залиште
-                <span>заявку</span> на сайті
+                *вирахована сумма <span class="modal__paragraph--recolor">приблизна</span>. Для визначення більш точної
+                вартості, залиште
+                <span class="modal__paragraph--recolor">заявку</span> на сайті
             </p>
             <button class="modal__button">РОЗРАХУНОК</button>
         </div>
     </div>
 
-
-
-
-
     <div class="body__circle--first"></div>
     <div class="body__circle--second"></div>
-    <div class="body__circle--third"></div>
-    <div class="body__circle--fourth"></div>
-    <div class="body__circle--fifth"></div>
-    <div class="body__circle--sixth"></div>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/slider.js"></script>
-    <script src="./js/modal.js"></script>
+    <script type="module" src="./js/modal.js"></script>
+    <script type="module" src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

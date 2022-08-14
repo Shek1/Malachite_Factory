@@ -1,4 +1,17 @@
 .modal {
+  &__order {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 450px;
+    height: 500px;
+    padding-top: 17px;
+    padding-bottom: 20px;
+
+    background: #1c1c1c;
+  }
   &__cost {
     position: absolute;
     top: 50%;
@@ -7,7 +20,6 @@
 
     width: 450px;
     height: 580px;
-    padding-left: 30px;
     padding-top: 17px;
     padding-bottom: 20px;
 
@@ -16,6 +28,7 @@
 
   &__title {
     margin-bottom: 60px;
+    margin-left: 30px;
     font-family: "Sansation";
     font-weight: 400;
     font-size: 24px;
@@ -27,12 +40,16 @@
   &__text {
     width: 395px;
     height: 32px;
+    margin-left: 30px;
+    border: none;
+    border-bottom: 2px solid rgba(225, 244, 243, 0.5);
 
     font-family: "Sansation";
     font-weight: 400;
     font-size: 24px;
     line-height: 27px;
 
+    background-color: transparent;
     color: rgba(225, 244, 243, 0.5);
     &::after {
       content: "";
@@ -53,19 +70,57 @@
     right: 25px;
     cursor: pointer;
   }
-  &__paragraph {
+  &__paragraph-cost {
+    margin-left: 30px;
     margin-bottom: 10px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+
+    color: #ffffff;
+    &--recolor {
+      color: #0bda51;
+    }
+  }
+  &__paragraph {
+    margin-left: 30px;
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+
+    color: #ffffff;
+    &--recolor {
+      color: #ff0b0b;
+    }
   }
   &__button {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+
     margin-top: 37px;
     padding: 18px 97px;
     border: 3px solid #0bda51;
+    background-color: transparent;
+
+    font-family: "Sansation";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+
+    letter-spacing: 0.05em;
+
+    color: #0bda51;
+
     cursor: pointer;
   }
-
-  //   &__cost {
-  //     width: 450px;
-  //     height: 580px;
-  //     background: #1c1c1c;
-  //   }
 }
